@@ -1,15 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState, useEffect } from 'react'
+import axios from 'axios'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  //endpoint
+  const endPoint = "https://www.freetestapi.com/api/v1/actors";
+  //actors state
+  const [actors, setActors] = useState([]);
+
+  function fetchActors() {
+    axios.get(endPoint)
+      .then(res => console.log(res.data))
+  }
+
+  useEffect(fetchActors, [])
 
   return (
-    <>
-
-    </>
+    <></>
   )
 }
 
