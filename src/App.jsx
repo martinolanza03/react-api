@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import ActorCard from './components/ActorCard';
-import './App.css'
 
 function App() {
   //endpoint
@@ -16,10 +15,15 @@ function App() {
 
   useEffect(fetchActors, []);
 
-  return (
-    <ul>
-      <ActorCard actors={actors} />
-    </ul>
+  return (<>
+    <h1>Actors</h1>
+    <div className='container'>
+      <ul>
+        <ActorCard actors={actors} />
+      </ul>
+    </div>
+  </>
+
   )
 }
 

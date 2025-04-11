@@ -1,0 +1,54 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Card */
+
+h1 {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffe9e3;
+    border-radius: 10px;
+}
+
+.actor-name {
+    align-self: center;
+    color: #393e46;
+}
+
+.actor-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+span {
+    color: #393e46;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+p {
+    color: #393e46;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Container */
+
+.container {
+    margin: 0 auto;
+    width: 50%;
+}
